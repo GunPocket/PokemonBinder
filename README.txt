@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
     flask run
 
-    4. Acesse o projeto no navegador: [http://127.0.0.1:5000](http://127.0.0.1:5000)
+    4. Acesse o projeto no navegador: http://127.0.0.1:5000
 Estrutura do Projeto
 
     - `app.py`: Lida com as rotas e a lógica principal da aplicação.
