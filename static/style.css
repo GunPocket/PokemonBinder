@@ -1,0 +1,42 @@
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-primary, .btn-success {
+    border-radius: 20px;
+}
+
+.footer {
+    font-size: 0.9rem;
+    background-color: #343a40;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.tooltip-inner {
+    background-color: #212529;
+    color: #ffffff;
+}

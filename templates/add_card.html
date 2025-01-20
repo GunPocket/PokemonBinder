@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="text-center mb-4">Add New Card</h1>
+<div class="card shadow p-4">
+    <form method="POST" action="{{ url_for('add_card') }}">
+        <div class="mb-3">
+            <label for="name" class="form-label">Card Name</label>
+            <input type="text" name="name" class="form-control" placeholder="e.g., Latias EX" required>
+        </div>
+        <div class="mb-3">
+            <label for="serial" class="form-label">Serial</label>
+            <input type="text" name="serial" class="form-control" placeholder="e.g., 239/191" required>
+        </div>
+        <div class="mb-3">
+            <label for="type" class="form-label">Type</label>
+            <select class="form-select" name="type" required>
+                <option value="Pokemon">Pokemon</option>
+                <option value="Trainer">Trainer</option>
+                <option value="Energy">Energy</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="foil" class="form-label">Foil</label>
+            <select class="form-select" name="foil" required>
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" name="quantity" class="form-control" min="1" value="1" required>
+        </div>
+        <div class="mb-3">
+            <label for="price_min" class="form-label">Minimum Price</label>
+            <input type="number" step="0.01" name="price_min" class="form-control" placeholder="Enter price">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Add Card</button>
+    </form>
+</div>
+{% endblock %}
